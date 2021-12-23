@@ -29,14 +29,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   /* Raised layer (RS)
    *  !       @     {      }      |        ||       -      7      8      9      *
-   *  #       £     (      )      `        ||       .      4      5      6      +
+   *  #       $     (      )      `        ||       .      4      5      6      +
    *  %       ^     [      ]      ~        ||       &      1      2      3      \
    * menu    caps   <      >     del       ||       _                    0      =
    */
 
   [_RS] = KEYMAP( /* [> RAISE <] */
     KC_EXLM, UK_AT,   KC_LCBR, KC_RCBR, UK_PIPE,                   KC_MINS, KC_7,    KC_8,    KC_9, KC_ASTR,
-    UK_HASH, UK_PND,  KC_LPRN, KC_RPRN, KC_GRV,                    KC_DOT,  KC_4,    KC_5,    KC_6, KC_PLUS,
+    UK_HASH, KC_DLR,  KC_LPRN, KC_RPRN, KC_GRV,                    KC_DOT,  KC_4,    KC_5,    KC_6, KC_PLUS,
     KC_PERC, KC_CIRC, KC_LBRC, KC_RBRC, UK_TILD, KC_TRNS, KC_TRNS, KC_AMPR, KC_1,    KC_2,    KC_3, UK_BSLS,
     KC_MENU, KC_CAPS, KC_LT,   KC_GT,   KC_DEL,  KC_TRNS, KC_TRNS, KC_UNDS, KC_TRNS, KC_TRNS,  KC_0, KC_EQL ),
 
@@ -51,7 +51,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_INS,  KC_HOME, KC_UP,   KC_END,  KC_PGUP,                   KC_VOLU, KC_F7,   KC_F8,   KC_F9,   KC_F10,
     KC_DELT, KC_LEFT, KC_DOWN, KC_RGHT, KC_PGDN,                   KC_VOLD, KC_F4,   KC_F5,   KC_F6,   KC_F11,
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_MUTE, KC_F1,   KC_F2,   KC_F3,   KC_F12,
-    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, RESET, KC_TRNS, KC_TRNS,   KC_TRNS  )
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, RESET  )
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
