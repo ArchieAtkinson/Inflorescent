@@ -27,25 +27,26 @@ Change switch footprint to allow for 5 pin switches.
 ![The PCBs](PCBs.jpg)
 
 ## Layout
+```
+Basic layer (L0)
+ q      w      e      r      t        ||       y      u      i      o      p
+ a      s      d      f      g        ||       h      j      k      l      ;
+ z      x      c      v      b   del  || >/||  n      m      ,      .      /
+esc    tab   super  shift  bksp  ctrl || alt  space   RS     LW     '     ret
 
-  /* Basic layer (L0)
-   *  q      w      e      r      t        ||       y      u      i      o      p
-   *  a      s      d      f      g        ||       h      j      k      l      ;
-   *  z      x      c      v      b   del  || >/||  n      m      ,      .      /
-   * esc    tab   super  shift  bksp  ctrl || alt  space   RS     LW     '     ret
-   */
 
 
-  /* Raised layer (RS)
-   *  !       @     {      }      |        ||       -      7      8      9      *
-   *  #       $     (      )      `        ||       .      4      5      6      +
-   *  %       ^     [      ]      ~        ||       &      1      2      3      \
-   * menu    caps   <      >     del       ||       _                    0      =
-   */
+Raised layer (RS)
+ !       @     {      }      |        ||       -      7      8      9      *
+ #       $     (      )      `        ||       .      4      5      6      +
+ %       ^     [      ]      ~        ||       &      1      2      3      \
+menu    caps   <      >     del       ||       _                    0      =
 
-  /* Lower layer (LW)
-   * insert  home   up    end    pgup      ||      vol+    F7     F8     F9    F10
-   *  del    left  down  right   pgdn      ||      vol-    F4     F5     F6    F11
-   *                                       ||      mute    F1     F2     F3    F12
-   *                                  ||        –                    ¨    	   reset
-   */
+
+Lower layer (LW)
+insert  home   up    end    pgup      ||      vol+    F7     F8     F9    F10
+ del    left  down  right   pgdn      ||      vol-    F4     F5     F6    F11
+                                      ||      mute    F1     F2     F3    F12
+                                 ||        –                    ¨    	   reset
+
+```  
